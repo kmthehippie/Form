@@ -1,0 +1,179 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-panel{
+    width:35vw;
+    position: relative;
+}
+
+.background img{
+    width: 35vw;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+}
+.logo img{
+    max-width: 5vw;
+    margin-right: 1em;
+}
+.logo h1{
+    top: 50%;
+    color: white;
+    letter-spacing: 0.25em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer a{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo{
+    background-color: rgba(0,0,0,0.5);
+    width: 35vw;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.right-panel{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 248, 248);
+
+}
+
+.r-top-panel{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2em;
+}
+.r-top-panel h2{
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-panel{
+    background-color: white;
+    box-shadow: 5px 10px 10px rgba(177, 177, 177, 0.5);
+    font-size: 1vh;
+    display: flex;
+
+}
+
+label{
+    display: block;
+    font-family: inherit;
+    padding: 5px;
+    margin-top: 1em;
+    letter-spacing: 0.15em;
+}
+
+
+fieldset{
+    border: none;
+    padding: 2em;
+    padding-bottom: 2.5em;
+}
+
+input{
+    appearance: none;
+    padding: 0.5em;
+    border: 1px solid rgb(223, 222, 222);
+    width: 220px;
+    box-sizing: border-box;
+    margin-right: 3em;
+    border-radius: 0.25em;
+}
+
+.name, .contact, .password-div{
+    display: flex;
+}
+
+
+input:focus{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid rgba(9, 13, 207, 0.945);
+    box-shadow: 0px 0px 3px rgba(0, 4, 255, 0.884);
+
+
+}
+
+.form-panel h1{
+    font-size: 2.5vh;
+    margin-bottom: 1em;
+}
+label[for=password]{
+    position: relative;
+}
+
+label[for=password]::after{
+    content:"*Passwords do not match";
+    color: rgb(117, 1, 1);
+    position: absolute;
+    top: 6em;
+    left: 0;
+    font-size: 10px;
+    
+}
+
+
+.error:invalid{
+    border-top: 0.5px solid rgba(207, 9, 9, 0.945);
+    border-right: 0.5px solid rgba(207, 9, 9, 0.945);
+    border-bottom: none;
+    box-shadow: 0px 0px 3px rgba(255, 0, 0, 0.884);
+}
+
+.r-bottom-panel{
+    margin-top: 3em;
+    margin-left: 1.5em;
+}
+button{
+    border: none;
+    background-color: rgb(107, 32, 32);
+    padding: 20px 40px;
+    color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.r-bottom-panel p{
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+.r-bottom-panel a{
+    text-decoration: none;
+    color:rgb(107, 32, 32);
+    font-weight: 700;
+}
